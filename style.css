@@ -31,3 +31,26 @@ background: yellow;
     margin-bottom: 20px;
 }
 
+.col-33{
+    width: 33%;
+    margin-bottom: 20px;
+}
+
+.col img {
+    max-width: 100%;
+}
+
+.alignhorizontal{
+    justify-content:center;
+    justify-content: flex-end;
+    justify-content: flex-start;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.alignvertical{
+    align-items: flex-end;
+    align-items: center;
+    align-items: flex-start;
+    align-items: stretch;
+}
