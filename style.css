@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    width:100%; /*Si l'écran est moins grand que 1190px alors il doit occuper 100% de la place*/
+    max-width: 1190px; /*Si l'écran est plus grand que 1190px alors il mesurer au max 1190px*/
+    background: tomato;
+    text-align: center;
+    margin: auto; /*Si l'écran est plus que 1190px alors il doit center mon objet au centre de l'écran*/
+}
