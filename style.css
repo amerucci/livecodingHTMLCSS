@@ -1,37 +1,42 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.content{
-    width:100%; /*Si l'écran est moins grand que 1190px alors il doit occuper 100% de la place*/
-    max-width: 1190px; /*Si l'écran est plus grand que 1190px alors il mesurer au max 1190px*/
+.content {
+    width: 100%;
+    /*Si l'écran est moins grand que 1190px alors il doit occuper 100% de la place*/
+    max-width: 1190px;
+    /*Si l'écran est plus grand que 1190px alors il mesurer au max 1190px*/
 
     text-align: center;
-    margin: auto; /*Si l'écran est plus que 1190px alors il doit center mon objet au centre de l'écran*/
- 
+    margin: auto;
+    /*Si l'écran est plus que 1190px alors il doit center mon objet au centre de l'écran*/
+
 }
 
-.fullwidth{
-width: 100%;
-background: yellow;
+.fullwidth {
+    width: 100%;
+    background: yellow;
 }
 
-.flex{
+/*PARTIE FLEXBOX */
+
+.flex {
     display: flex;
 
 }
 
-.avecflexwrap{
+.avecflexwrap {
     flex-wrap: wrap;
 }
 
-.col{
+.col {
     width: 50%;
     margin-bottom: 20px;
 }
 
-.col-33{
+.col-33 {
     width: 33%;
     margin-bottom: 20px;
 }
@@ -40,35 +45,64 @@ background: yellow;
     max-width: 100%;
 }
 
-.alignhorizontal{
-    justify-content:center;
+.alignhorizontal {
+    justify-content: center;
     justify-content: flex-end;
     justify-content: flex-start;
     justify-content: space-around;
     justify-content: space-between;
 }
 
-.alignvertical{
+.alignvertical {
     align-items: flex-end;
-    align-items: center;
+
     align-items: flex-start;
     align-items: stretch;
+    align-items: center;
 }
 
+
+/*PARTIE FLOAT*/
+
+.superclassalign{
+    justify-content: center;
+    align-items: center;
+}
+.colonne {
+    float: left;
+    width: 33%
+}
+
+.relative{
+    position:relative;
+}
+
+.colonnefloatcenter{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+/*PARTIE MEDIAS QUERIES */
 /*MOBILE */
 @media (max-width: 767px) {
-.col{
-    width: 100%;
-}
-.alignvertical{
-    align-items: flex-end;
+    .col {
+        width: 100%;
+    }
 
-  }
-  }
+    .alignvertical {
+        align-items: flex-end;
+
+    }
+}
+
 /*TABLETTE -> PETIT ECRAN ORDI */
-  @media (min-width: 768px) and (max-width:1100px)  {
-      .alignvertical{
+@media (min-width: 768px) and (max-width:1100px) {
+    .alignvertical {
         align-items: center;
 
-      }
-  }
+    }
+}
